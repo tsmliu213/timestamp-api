@@ -16,8 +16,7 @@ function isNumber(str) {
 
 app.get('/', function(req, res) {
     res.send('Timestamp API');
-})
-
+});
 app.get('/:time', function(req, res) {
     isNumber(req.params.time);
     var unixTime;
